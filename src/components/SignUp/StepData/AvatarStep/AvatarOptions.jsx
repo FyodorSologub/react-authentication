@@ -11,6 +11,7 @@ export function AvatarOptions() {
     // state getters
     const avatarConfigOptions = useSelector((state) => state.SignUp.avatarConfigOptions);
     const avatarConfig = useSelector((state) => state.SignUp.avatarConfig);
+    const mobileShowSettings = useSelector((state) => state.SignUp.mobileShowSettings);
 
     // state setters
     const updateAvatarConfig = (key, value) => dispatch(SignUpActions.updateAvatarConfig({ key, value }));
@@ -21,7 +22,7 @@ export function AvatarOptions() {
     // utils
 
     return (
-        <div className="w-2/5 h-full flex flex-col bg-slate-100 rounded-md px-4 py-6 gap-y-6 overflow-y-hidden overflow-x-hidden">
+        <div className={ mobileShowSettings === true ? "w-full mb-5 md:mb-0 md:w-2/5 h-[95%] md:h-full flex flex-col bg-slate-100 rounded-md px-4 py-6 gap-y-6 overflow-y-hidden overflow-x-hidden" : "w-full mb-5 md:mb-0 md:w-2/5 h-[95%] md:h-full hidden md:flex flex-col bg-slate-100 rounded-md px-4 py-6 gap-y-6 overflow-y-hidden overflow-x-hidden" }>
             <h2 className="font-sans antialiased font-thin tracking-wide leading-5 text-center">Preferences</h2>
             <div className="w-full h-full overflow-y-auto" style={{ 'msOverflowStyle': 'none',  "scrollbarWidth": "none" }}>
                 <ul className="flex flex-col w-full h-full gap-y-4 pt-4 px-4 list-inside list-disc hover:list-disc">

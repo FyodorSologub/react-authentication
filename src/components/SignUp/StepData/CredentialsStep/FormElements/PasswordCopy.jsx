@@ -44,7 +44,7 @@ export function PasswordCopy(props) {
     }
 
     return (
-        <label className='w-full md:w-4/6 flex flex-col gap-y-1 text-2xl lg:text-xs text-start font-thin lg:font-thin tracking-wide lg:tracking-normal text-gray-900'>
+        <label className='w-full md:w-4/6 flex flex-col gap-y-1 text-md md:text-xs text-start font-thin lg:font-thin tracking-wide lg:tracking-normal text-gray-900'>
             Confirm password
             <div className="flex justify-start items-center gap-x-5 rounded-md border border-slate-200 bg-slate-100 px-4 py-2">
                 <input

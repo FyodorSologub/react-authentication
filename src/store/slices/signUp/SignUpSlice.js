@@ -9,6 +9,11 @@ export const SignUpSlice = createSlice(
     initialState: defaultState,
   
     reducers: {
+        // mobile view reducers
+        mobileToggleBlocks(state) {
+            state.mobileShowSettings = !state.mobileShowSettings;
+        },
+
         // step reducers
         goStepForward(state) {
             state.step = state.step + 1;

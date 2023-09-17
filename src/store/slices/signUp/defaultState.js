@@ -7,6 +7,8 @@ export const defaultState = {
     password: '',
     passwordCopy: '',
 
+    mobileShowSettings: false,
+
     usernameMessage: 'between 5 and 15 symbols',
     passwordMessage: '6 symbols or more',
     passwordCopyMessage: '6 symbols or more',

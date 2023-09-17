@@ -20,9 +20,9 @@ export function SumUpStep() {
     // utils
 
     return (
-        <div className="w-full h-full flex flex-col items-center">
+        <div className="w-full h-full flex flex-col items-center justify-center lg:justify-start gap-y-5 md:gap-y-10 lg:gap-y-0">
             <h1 className="font-sans text-3xl md:text-4xl antialiased font-thin tracking-wide text-center">Looks all right?</h1>
-            <div className="w-full h-full flex flex-col gap-y-4 justify-center items-center mt-auto">
+            <div className="w-full lg:h-full flex flex-col gap-y-4 justify-center items-center lg:mt-auto">
                 <h3 className="font-sans antialiased font-thin text-xl tracking-wide leading-5 text-center">{ username }</h3>
                 <div className="flex flex-col justify-start items-center">
                     <Avatar className='w-72 h-72 border border-slate-500 border-rounded' shape='circle' {...genConfig(config)} />

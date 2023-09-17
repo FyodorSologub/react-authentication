@@ -44,7 +44,7 @@ export function RightController() {
     return (
         <button onClick={handleGoStepForward}>
             <svg 
-                className={ checkAbilityToGoForward() ? 'absolute top-1/2 left-full scale-150 ml-4 h-5 w-5 text-slate-600 font-thin leading-5 rotate-90 hover:cursor-pointer' : 'absolute top-1/2 left-full scale-150 ml-4 h-5 w-5 text-slate-400 opacity-70 font-thin leading-5 rotate-90 hover:cursor-pointer' } 
+                className={ checkAbilityToGoForward() ? 'absolute top-[95%] md:top-1/2 right-[5%] md:right-[unset] md:left-full scale-150 md:ml-4 h-5 w-5 text-slate-600 font-thin leading-5 rotate-90 hover:cursor-pointer' : 'absolute top-[95%] md:top-1/2 right-[5%] md:right-[unset] md:left-full scale-150 ml-4 h-5 w-5 text-slate-400 opacity-70 font-thin leading-5 rotate-90 hover:cursor-pointer' } 
                 style={ {rotate: '-180deg'} } 
             >
                 <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" />

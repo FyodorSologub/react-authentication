@@ -23,7 +23,7 @@ export function Username() {
     const checkUsername = (username) => username.length >= 4 && username.length <= 12;
 
     return (
-        <label className='w-full md:w-4/6 flex flex-col gap-y-1 text-2xl lg:text-xs text-start font-thin lg:font-thin tracking-wide lg:tracking-normal text-gray-900'>
+        <label className='w-full md:w-4/6 flex flex-col gap-y-1 text-md md:text-xs text-start font-thin lg:font-thin tracking-wide lg:tracking-normal text-gray-900'>
             Username
             <div className="w-full bg-slate-100 border border-slate-200 rounded-md">
                 <input
